@@ -131,6 +131,7 @@ Function best practices
 
 In order to make a calculator we must define what our calulator can do, to make this simple I have split each function into another function which can then be placed within our calculator function.
 
+
 Addition, returing the sum of our two arguments
 ```
 def add(num1, num2):
