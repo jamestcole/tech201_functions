@@ -1,37 +1,56 @@
 def add(num1, num2):
-    return(num1 + num2)
+    if num1.isdigit() and num2.isdigit():
+        return(float(num1) + float(num2))
+    else:
+        print("please type valid numbers")
 
 def subtract(num1, num2):
-    return(num1 - num2)
+    if num1.isdigit() and num2.isdigit():
+        return(float(num1) - float(num2))
+    else:
+        print("please type valid numbers")
 
 def multiply(num1, num2):
-    return(num1 * num2)
+    if num1.isdigit() and num2.isdigit():
+        return(float(num1) * float(num2))
+    else:
+        print("please type valid numbers")
 
 def divide(num1, num2):
-    return(num1/num2)
+    if num1.isdigit() and num2.isdigit():
+        return(float(num1) / float(num2))
+    else:
+        print("please type valid numbers")
 
 def CMtoM(num1):
-    return(num1/100)
+    if num1.isdigit():
+        return((float(num1))/100)
+    else:
+        print("please type valid numbers")
 
 def MtoFEET(num1):
-    return(round((num1*3.2808399),2))
+    if num1.isdigit():
+        return(round(((float(num1))*3.2808399),2))
+    else:
+        print("please type valid numbers")
+
 
 def calculator():
     calculate = True
     while calculate:
         button = input("press calculator button here (+,-,*,/,(CM for m from cm),(F for feet from m),(x for exit)):")
         if button == "-":
-            print(subtract(int((input("first number:"))),int((input("second number:")))))
+            print(subtract(input("first number:"),input("second number:")))
         elif button == "+":
-            print(add(int((input("first number:"))),int((input("second number:")))))
+            print(add(input("first number:"),input("second number:")))
         elif button == "*":
-            print(multiply(int((input("first number:"))),int((input("second number:")))))
+            print(multiply(input("first number:"),input("second number:")))
         elif button == "/":
-            print(divide(int((input("first number:"))),int((input("second number:")))))
+            print(divide(input("first number:"),input("second number:")))
         elif button.upper() == "CM":
-            print(CMtoM(int(input("number of cm:"))))
+            print(CMtoM((input("number of cm:"))))
         elif button.upper() == "F":
-            print(MtoFEET(int(input("number of m:"))))
+            print(MtoFEET((input("number of m:"))))
         elif button == "x":
             print("exiting ...")
             calculate = False
