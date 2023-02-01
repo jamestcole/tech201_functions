@@ -128,35 +128,50 @@ Function best practices
 - consider using type hints to avoid type errors when you run your code
 
 ## Calculator Walkthrough
+
+In order to make a calculator we must define what our calulator can do, to make this simple I have split each function into another function which can then be placed within our calculator function.
+
+Addition, returing the sum of our two arguments
 ```
 def add(num1, num2):
     return(num1 + num2)
 ```
-
+subtraction, returning the first argument after subtracting the second
 ```
 def subtract(num1, num2):
     return(num1 - num2)
 ```
+multiplication, returning the arguments multiplied together
 ```
 def multiply(num1, num2):
     return(num1 * num2)
 ```
-
+division, dividing the first argument by the second
 ```
 def divide(num1, num2):
     return(num1/num2)
 ```
+### additional functions
+
+cm to m conversion, to divide centimeters by 100 to give the number of meters.
 
 ```
 def CMtoM(num1):
     return(num1/100)
 ```
 
+m to ft conversion, multiplying the number of meters to produce the number of feet, here i have rounded it to two decimal places using round()
 ```
 def MtoFEET(num1):
     return(round((num1*3.2808399),2))
+    
 ```
 
+
+### Calculator Code
+
+Now that we have all of our necissary functions, we can build our calculator with another function which can be called upon for the user to interact with, first by selecting a button, then by entering numbers and seeing the result.
+I have used print() here, however this can be changed for return if the numbers must be used elsewhere in the code rather than printed out for demonstration purposes. 
 ```
 def calculator():
     calculate = True
