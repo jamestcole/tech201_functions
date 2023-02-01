@@ -78,3 +78,44 @@ keep functions small to preserve readility and simplicity
 use comments in your functions/methods to give instructions on how to use them
 consider using type hints to avoid type errors when you run your code
 
+## Calculator Walkthrough
+```
+def add(num1, num2):
+    return(num1 + num2)
+```
+
+```
+def subtract(num1, num2):
+    return(num1 - num2)
+```
+```
+def multiply(num1, num2):
+    return(num1 * num2)
+```
+
+```
+def divide(num1, num2):
+    return(num1/num2)
+```
+
+```
+def calculator():
+    calculate = True
+    while calculate:
+        button = input("press calculator button here (+,-,*,/,(x for exit)):")
+        if button == "-":
+            print(subtract(int((input("first number:"))),int((input("second number:")))))
+        elif button == "+":
+            print(add(int((input("first number:"))),int((input("second number:")))))
+        elif button == "*":
+            print(multiply(int((input("first number:"))),int((input("second number:")))))
+        elif button == "/":
+            print(divide(int((input("first number:"))),int((input("second number:")))))
+        elif button == "x":
+            print("exiting ...")
+            calculate = False
+        else:
+            print("not a button")
+
+calculator()
+```
