@@ -50,10 +50,10 @@
 #
 # multi_args(1, 2, 3, 4)
 
-# def greeting(name):
-#     print("Hello my name is: " + name)
+def greeting(name):
+    print("Hello my name is: " + name)
 #
-# greeting(24601)
+greeting(24601)
 
 
 # def division(num1: int = 5, num2: int = 2) -> float:
