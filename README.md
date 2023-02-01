@@ -14,13 +14,16 @@ def print_something():
 ```
 
 `print_something()`
+```
+def print_something(print_string):
+    print(print_string)
+```
 
- def print_something(print_string):
-     print(print_string)
 
- print_something("this is my variable")
 
- print_something("second time")
+`print_something("this is my variable")`
+
+`print_something("second time")`
 
 in java
 public void print_string(string_text)
