@@ -23,6 +23,7 @@ def calculator():
         elif button == "/":
             divide(int((input("first number:"))),int((input("second number:"))))
         elif button == "x":
+            print("exiting ...")
             calculate = False
         else:
             print("not a button")
